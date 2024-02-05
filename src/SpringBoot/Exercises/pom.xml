@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.develhope</groupId>
-    <artifactId>ex2</artifactId>
+    <artifactId>Exercises</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ex2</name>
     <description>ex2</description>
