@@ -1,10 +1,10 @@
-package org.develhope.ex1;
+package org.develhope.ex2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Ex1ApplicationTests {
+class Ex2ApplicationTests {
 
     @Test
     void contextLoads() {
