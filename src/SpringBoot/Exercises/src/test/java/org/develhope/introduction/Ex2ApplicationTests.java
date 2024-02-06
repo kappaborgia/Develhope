@@ -1,4 +1,4 @@
-package org.develhope.ex2;
+package org.develhope.introduction;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

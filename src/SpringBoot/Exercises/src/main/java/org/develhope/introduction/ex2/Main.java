@@ -1,4 +1,4 @@
-package org.develhope.ex2.ex2;
+package org.develhope.introduction.ex2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

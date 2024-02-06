@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e91f2c-d89b-4baf-b49e-9dc802e42397" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex2/Testo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex3/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex3/Testo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/ex2/ex1/Ex1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex1/Ex1Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/ex2/ex1/Ex1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex1/Ex1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/ex2/ex2/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex2/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/ex2/ex2/LibroManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex2/LibroManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/ex2/ex2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/src/main/java/org/develhope/introduction/ex2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises/src/test/java/org/develhope/ex2/Ex2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/src/test/java/org/develhope/introduction/Ex2ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/home/Downloads/ex1"
+    "last_opened_file_path": "K:/Develhope/src/SpringBoot"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

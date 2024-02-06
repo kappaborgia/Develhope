@@ -1,4 +1,4 @@
-package org.develhope.ex2.ex2;
+package org.develhope.introduction.ex2;
 
 public class Libro {
     private int id;
