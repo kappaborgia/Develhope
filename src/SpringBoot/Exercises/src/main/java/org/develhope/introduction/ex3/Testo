@@ -1,8 +1,0 @@
-Scrivi un'applicazione web SpringBoot che alla endpoint GET v2/ciao/Lombardia?nome=Giuseppe
-risponde con oggetto JSON formato cosi:
-
-{
-"nome": "Giuseppe",
-"provincia": "Lombardia",
-"saluto": "Ciao Giuseppe. com'è il tempo in Lombardia?"
-}
