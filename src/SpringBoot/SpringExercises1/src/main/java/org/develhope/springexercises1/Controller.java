@@ -12,6 +12,6 @@ public class Controller {
     @GetMapping("/ciao")
     public String ciao(@RequestParam String name, @RequestParam String citta){
 
-        return "Ciao" + name + " com'è il tempo a " + citta;
+        return "Ciao " + name + " com'è il tempo a " + citta;
     }
 }
