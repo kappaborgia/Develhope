@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     @GetMapping("/saluto")
     public User saluto(@RequestParam String name,
-                       @RequestParam String city,
-                       @RequestParam String saluto){
+                       @RequestParam String city){
+
         return new User(name, city, "Ciao " + name + ". Come è il tempo a " + city);
         //return new User(name, city, saluto);
 
