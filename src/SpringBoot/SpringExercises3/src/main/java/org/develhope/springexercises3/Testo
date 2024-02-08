@@ -1,0 +1,6 @@
+Scrivi una applicazione web Spring Boot con:
+NameController dove si mappa il parametro name per:
+ -restituire il nome alla chimata GET
+ -restituire in nome al contrario (es. da John a nhoJ, usando StringBuilder) alla chiamata
+ POST
+Testare le chiamate del API endpoint usando POSTMAN
