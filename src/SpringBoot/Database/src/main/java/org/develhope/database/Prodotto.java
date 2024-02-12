@@ -1,7 +1,6 @@
 package org.develhope.database;
 
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
 @Table
