@@ -8,8 +8,8 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private Double price;
-    @Column
+    //@Column
     private String description;
 }

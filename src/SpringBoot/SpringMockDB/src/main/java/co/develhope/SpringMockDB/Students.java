@@ -4,14 +4,17 @@ import jakarta.persistence.*;
 
 @Entity
 @Table
-public class User {
+public class Students {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private long id;
     @Column(nullable = false)
-    private String name;
+    private String lastame;
+
     @Column(nullable = false)
-    private String surname;
-    @Column(nullable = false)
-    private int age;
+    private String firstname;
+
+    @Column(unique = true, nullable = false)
+    private String email;
+
 }
