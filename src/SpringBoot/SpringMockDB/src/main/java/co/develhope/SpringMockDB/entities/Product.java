@@ -1,4 +1,4 @@
-package co.develhope.SpringMockDB;
+package co.develhope.SpringMockDB.entities;
 
 import jakarta.persistence.*;
 
