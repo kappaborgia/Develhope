@@ -1,6 +1,5 @@
-package co.develhope.springhibernate;
+package co.develhope.springhibernate.entities;
 
-import com.fasterxml.jackson.annotation.JacksonInject;
 import jakarta.persistence.*;
 
 @Entity

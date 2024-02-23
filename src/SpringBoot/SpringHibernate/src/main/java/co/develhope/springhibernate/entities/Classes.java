@@ -1,4 +1,4 @@
-package co.develhope.springhibernate;
+package co.develhope.springhibernate.entities;
 
 import jakarta.persistence.*;
 
