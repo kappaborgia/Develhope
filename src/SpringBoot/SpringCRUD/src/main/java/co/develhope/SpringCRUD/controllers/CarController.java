@@ -27,14 +27,22 @@ public class CarController {
     }
 
     @GetMapping("/singleCar/{id}")
-    public Car singleCar(Car car){
-        if(carRepository.existsById(car.getId()) ){
-            return carRepository.findById(car.getId()).orElse(null);
-        } else {
+    //HACK /*
+    //    public Car singleCar(Car car){
+    //        if(carRepository.existsById(car.getId()) ){
+    //            return carRepository.findById(car.getId()).orElse(null);
+    //        } else {
+    //            return new Car();
+    //        }
+    //    } */
+    public Car singleCar(@PathVariable long id ){
+        Car car = carRepository.getById(id);
+        if(carRepository.existsById(car.getId())){
+            return car;
+        }else {
             return new Car();
         }
     }
-
 
     //FIXME il metodo restituisce valori null.
     @GetMapping("/ub/{id}")
