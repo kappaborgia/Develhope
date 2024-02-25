@@ -26,20 +26,24 @@ public class CarController {
         return  carList;
     }
 
-    @GetMapping("/singleCar")
+    @GetMapping("/singleCar/{id}")
     public Car singleCar(Car car){
         if(carRepository.existsById(car.getId()) ){
-            return car;
+            return carRepository.findById(car.getId()).orElse(null);
         } else {
-            return null;
+            return new Car();
         }
     }
 
-    @GetMapping("/ub")
-    public Car updateModel(Car car){
-        car.setBrand("BMW");
-        return car;
+
+    //FIXME il metodo restituisce valori null.
+    @GetMapping("/ub/{id}")
+    public Car updateModel(Car car) {
+        if (carRepository.existsById(car.getId())) {
+            car.setBrand("BMW");
+            return car;
+        } else {
+            return new Car();
+        }
     }
 }
-
-// TODO per ritornare un singolo oggetto car, nell GetMapping usare le graffe per specificare tramite id l'oggeto da ritornare.
