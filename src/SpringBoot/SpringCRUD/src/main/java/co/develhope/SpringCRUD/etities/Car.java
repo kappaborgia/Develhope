@@ -21,5 +21,54 @@ public class Car {
     @Column(nullable = false)
     private String color;
 
+    public Car(long id, String model, String brand, Integer year, String color) {
+        this.id = id;
+        this.model = model;
+        this.brand = brand;
+        this.year = year;
+        this.color = color;
+    }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public Car() {
+    }
 }
