@@ -27,14 +27,7 @@ public class CarController {
     }
 
     @GetMapping("/{id}") //ritorna un sigolo oggetto car specificato tramite la chiamata di rete
-    //REVIEW
-    //    public Car singleCar(Car car){
-    //        if(carRepository.existsById(car.getId()) ){
-    //            return carRepository.findById(car.getId()).orElse(null);
-    //        } else {
-    //            return new Car();
-    //        }
-    //    }
+
     public Car singleCar(@PathVariable long id ){
         Car car = carRepository.getById(id);
         if(carRepository.existsById(car.getId())){
@@ -52,12 +45,12 @@ public class CarController {
         return newCar;
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}") // cancella una car specfica
     public void deleteById(@PathVariable long id){
         carRepository.deleteById(id);
     }
 
-    @DeleteMapping
+    @DeleteMapping // cancella piu di una car nello stesso momento
     public void deleteMultipleById(@RequestParam List<Long> id){
         carRepository.deleteAllById(id);
     }
