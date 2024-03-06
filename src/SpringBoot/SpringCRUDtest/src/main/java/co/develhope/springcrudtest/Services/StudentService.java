@@ -12,7 +12,8 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
-public class StudentService {
+public class
+StudentService {
     @Autowired
     StudentsRepository studentsRepository;
 

@@ -12,7 +12,7 @@ public class Students {
     private String name;
     @Column(nullable = false)
     private String surname;
-    @Column(nullable = false)
+
     private Boolean isWorking;
 
     public Students(Long id, String name, String surname, Boolean isWorking) {

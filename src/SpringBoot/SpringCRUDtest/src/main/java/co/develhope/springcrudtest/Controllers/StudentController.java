@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/student")
 public class StudentController {
     @Autowired
     StudentService studentService;
 
-    @PostMapping("/create")
+    @PostMapping
     void createStudent(@RequestBody Students student){
         studentService.createStudent(student);
     }
@@ -23,7 +23,7 @@ public class StudentController {
         return studentService.studentList();
     }
 
-    @GetMapping("/studentbyid/{id}")
+    @PutMapping("/{id}")
     Students getStudenteById(@PathVariable Long id){
         return studentService.studentsById(id);
     }
