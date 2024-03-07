@@ -10,6 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/student")
 public class StudentController {
+
     @Autowired
     StudentService studentService;
 
@@ -23,8 +24,33 @@ public class StudentController {
         return studentService.studentList();
     }
 
-    @PutMapping("/{id}")
+    @GetMapping("/{id}")
     Students getStudenteById(@PathVariable Long id){
         return studentService.studentsById(id);
     }
+
+    @PatchMapping("/updateAttribute/{id}")
+    Students updateAttribute(@PathVariable Long id, @RequestParam String updateAttribute, @RequestParam String updateAttribute2){
+        return studentService.updateAttribute(id,updateAttribute,updateAttribute2);
+    }
+
+    @PatchMapping("/updateIsWorking")
+    Students updateIsWorking(@PathVariable Long id, @RequestParam Boolean isWorking){
+        return studentService.updateIsWOrking(id, isWorking);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    void deleteStudent(@PathVariable Long id){
+        studentService.deleteStudent(id);
+    }
+
+
+
+
+
+
+
+
+
+
 }

@@ -36,24 +36,20 @@ StudentService {
         }
     }
 
-    //per aggiornare primary key di uno Student:
-    //passando primary key come path variable
-    //passando Student in request body
-    public Students updateStudent(@PathVariable Long id, @RequestBody Students updateStudent){
-        Students students = studentsRepository.findById(id).orElseThrow(()-> new NoSuchElementException("Studente con id:" + id + " non trovato"));
-        students.setName(updateStudent.getName());
-        students.setSurname(updateStudent.getSurname());
-        students.setWorking(updateStudent.getWorking());
-        studentsRepository.save(students);
-        return students;
-    }
-
     //per aggiornare il valore isWorking value:
     //passando primary key come path variable
     //passando request param con nome working
-    public Students updateAttribute(@PathVariable Long id, @RequestParam Boolean isWorking){
-        Students students = studentsRepository.findById(id).orElseThrow(()-> new NoSuchElementException("Studente con id:" +  id + " non trovato"));
+    public Students updateIsWOrking(Long id, Boolean isWorking){
+        Students students = studentsRepository.findById(id).orElseThrow(()-> new NoSuchElementException("Studente con id:" + id + " non trovato"));
         students.setWorking(isWorking);
+        return students;
+    }
+
+    // per aggiornare gli attributi
+    public Students updateAttribute(Long id, String updateAttribute, String updateAttribute2){
+        Students students = studentsRepository.findById(id).orElseThrow(()-> new NoSuchElementException("Studente con id:" +  id + " non trovato"));
+        students.setName(updateAttribute);
+        students.setSurname(updateAttribute2);
         studentsRepository.save(students);
         return students;
     }
