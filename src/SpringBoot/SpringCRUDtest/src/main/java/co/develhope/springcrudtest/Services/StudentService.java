@@ -40,20 +40,19 @@ StudentService {
     public Students updateIsWOrking(Long id, Boolean isWorking){
         Students students = studentsRepository.findById(id).orElseThrow(()-> new NoSuchElementException("Studente con id:" + id + " non trovato"));
         students.setWorking(isWorking);
+        studentsRepository.save(students);
         return students;
     }
 
     // per aggiornare gli attributi
-    public Students updateAttribute(Long id, String updateAttribute, String updateAttribute2){
-        Students students = studentsRepository.findById(id).orElseThrow(()-> new NoSuchElementException("Studente con id:" +  id + " non trovato"));
-        students.setName(updateAttribute);
-        students.setSurname(updateAttribute2);
+    public Students updateAttribute(Long id, Students students){
+        studentsRepository.findById(id).orElseThrow(()-> new NoSuchElementException("Studente con id:" +  id + " non trovato"));
         studentsRepository.save(students);
         return students;
     }
 
     //per cancellare uno Student
-    public void deleteStudent(@PathVariable Long id){
+    public void deleteStudent(Long id){
         studentsRepository.deleteById(id);
     }
 

@@ -29,12 +29,12 @@ public class StudentController {
         return studentService.studentsById(id);
     }
 
-    @PatchMapping("/updateAttribute/{id}")
-    Students updateAttribute(@PathVariable Long id, @RequestParam String updateAttribute, @RequestParam String updateAttribute2){
-        return studentService.updateAttribute(id,updateAttribute,updateAttribute2);
+    @PutMapping ("/updateAttribute/{id}")
+    Students updateAttribute(@PathVariable Long id, @RequestBody Students students){
+        return studentService.updateAttribute(id, students);
     }
 
-    @PatchMapping("/updateIsWorking")
+    @PatchMapping("/updateIsWorking/{id}")
     Students updateIsWorking(@PathVariable Long id, @RequestParam Boolean isWorking){
         return studentService.updateIsWOrking(id, isWorking);
     }
