@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ex5Spring.iml" filepath="$PROJECT_DIR$/.idea/ex5Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringCORS.iml" filepath="$PROJECT_DIR$/.idea/SpringCORS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex5Spring/ex5Spring.iml" filepath="$PROJECT_DIR$/ex5Spring/ex5Spring.iml" />
     </modules>
   </component>
 </project>
