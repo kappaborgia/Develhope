@@ -89,7 +89,11 @@ class StudentControllerTest {
     }
 
     @Test
-    void getStudenteById() {
+    void getStudenteById() throws Exception {
+        Students students = createStudents();
+        assertThat(students.getId()).isNotNull();
+        Students students1 = getAllStudentsFromaId(students.getId());
+        assertThat(students1.getId()).isEqualTo(students.getId());
     }
 
     @Test
