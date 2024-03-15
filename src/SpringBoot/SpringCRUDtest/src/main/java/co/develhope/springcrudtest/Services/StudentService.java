@@ -4,7 +4,6 @@ import co.develhope.springcrudtest.Entities.Students;
 import co.develhope.springcrudtest.Repositories.StudentsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -16,8 +15,8 @@ StudentService {
     StudentsRepository studentsRepository;
 
     // crea un nuovo studente
-    public void createStudent(Students students){
-        studentsRepository.save(students);
+    public Students createStudent(Students students){
+        return studentsRepository.save(students);
     }
 
     // ritorna la lista degli studenti creati
