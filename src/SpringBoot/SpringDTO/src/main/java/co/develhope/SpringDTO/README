@@ -1,0 +1,16 @@
+Implementa un'applicazione Spring Boot per gestire una lista di libri.
+Ogni libro dovrebbeavere
+un ID,
+un titolo,
+un autore,
+un ISBN
+una categoria.
+Utilizza un'entità JPA Book per rappresentare i dati dei libri nel database.
+Crea anche un DTO BookDTO,con dati ridotti, per trasferire i dati dei libri tra il controller e i servizi.
+Implementa un controller che consenta di aggiungere un libro,
+recuperare i dettagli di un libro dato il suo ID e ottenere la lista completa
+dei libri presenti nel sistema. Utilizza Spring Data JPA
+
+In questo esercizio andiamo a vedere come funziona un DTO:
+Un DTO è una classe come Attributi ridotti, puo essere utilizzata come presentazione a persone esterne
+IN ALCUNE CLASSI TROVIAMO DELLE DOPPIE FUNZIONI, E UN METODO CHE CONVERTE L'OGGETTO IN DTO
