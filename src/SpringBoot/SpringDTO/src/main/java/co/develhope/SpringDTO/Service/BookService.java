@@ -16,12 +16,18 @@ public class BookService {
 
     public Book createBook(Book book){
         // crea un libro
+        // nella creazione del libro non dobbiamo nascondere nulla, quindi creiamo il libro
+        // con tutti gli attributi.
         return bookRepository.save(book);
     }
+
     public BookDTO getBookDTObyId(Long id){
-        // ottieni un libro in formato DTO
+        // ottieni un libro in formato DTO (alcuni attributi nascosti)
         Book book = bookRepository.findById(id).orElse(null);
         return convertToDTO(book);
+    }
+    public Book getBookById(Long id){
+        return bookRepository.findById(id).orElse(null);
     }
 
     public List<Book> returnList(){
